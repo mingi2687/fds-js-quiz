@@ -9,7 +9,7 @@ const mathArea = (radius) => {
 
 mathArea(5)
 
-```js
+```
 
 ### 문제 2
 
