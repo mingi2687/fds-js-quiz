@@ -73,6 +73,20 @@ randomArry([1,2,3,4,5])
 
 양수를 입력받아, 그 수만큼의 길이를 갖는 임의의 문자열을 반환하는 함수를 작성하세요.
 
+```js
+function makeArray(i){
+  
+  let newString ='';
+  // console.log(newString)
+  newString += ' '.repeat(i);
+ 
+
+  return newString;
+  
+}
+makeArray(45);
+```
+
 ### 문제 7
 
 수 타입의 값으로만 이루어진 배열을 입력받아, 그 값들의 표준편차를 구하는 함수를 작성하세요.
