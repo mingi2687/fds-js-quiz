@@ -49,6 +49,22 @@ ceilBy5(37); -> 40
 
 배열을 입력받아, 요소들의 순서를 뒤섞은 새 배열을 반환하는 함수를 작성하세요.
 
+```js
+function randomArry(arry){
+  let newArry=[];
+  let arryIndex = arry.length
+ for(let i = 0; i < arry.length; i++ ){
+   let n = Math.floor(Math.random()*arryIndex)
+
+    newArry.push(arry[n])
+
+ }
+ return newArry
+}
+randomArry([1,2,3,4,5])
+```
+
+
 ### 문제 5
 
 임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
