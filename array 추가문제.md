@@ -7,7 +7,7 @@ max([3, 1, 4, 5, 2]) // -> 5
 ```
 ```
 function max(arry){
-  maxText='';
+ let maxText='';
   for(i = 0; i < arry.length; i++){
     if(arry[i] > maxText){
       maxText = arry[i]
