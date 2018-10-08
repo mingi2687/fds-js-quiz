@@ -26,6 +26,14 @@ const minMax = (min,max) => {
 
 minMax(5,13)
 ```
+```js
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+
+}
+getRandomInt(4,18)
+```
 
 ### 문제 3
 
