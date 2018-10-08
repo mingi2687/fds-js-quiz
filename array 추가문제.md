@@ -141,6 +141,22 @@ omok([
 randomItem([1, 2, 3, 4, 5]) // 1, 2, 3, 4, 5 중 아무거나 반환
 ```
 
+```js
+
+
+function randomItem(arr){
+  
+const leng = Math.floor(Math.random() * (arr[0] - arr[arr.length -1]))
+
+// console.log(Math.floor(Math.random() * (arr[0] + arr[arr.length -1]))
+)
+  return arr[leng]
+
+
+}
+randomItem([1, 2, 3, 4, 5])
+```
+
 ---
 
 문제 8. 배열을 입력받아, 요소들의 순서를 뒤섞은 새 배열을 반환하는 함수를 작성하세요. (단, 원본 배열이 변경되어서는 안 됩니다.)
