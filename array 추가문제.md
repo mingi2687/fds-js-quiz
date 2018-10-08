@@ -38,6 +38,25 @@ flatten([
 ]) // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+```
+
+function flatten(arr){
+ let newArr=[];
+    
+    for(let i = 0; i < arr.length; i++){
+      for(let j = 0; j < arr[i].length; j++)
+      newArr.push(arr[i][j])
+    }
+  return newArr
+} 
+
+flatten([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+])
+```
+
 ---
 
 문제 4. 2차원 배열을 입력받아 1차원 배열로 바꾸는 함수를 작성하세요. (`Array.prototype.reduce`를 이용하세요)
