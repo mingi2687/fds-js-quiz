@@ -5,7 +5,21 @@
 ```js
 max([3, 1, 4, 5, 2]) // -> 5
 ```
+```
+function max(arry){
+  maxText='';
+  for(i = 0; i < arry.length; i++){
+    if(arry[i] > maxText){
+      maxText = arry[i]
+    }
+  }
+  return maxText
+}
 
+
+
+max([3, 1, 4, -5, 2])
+```
 ---
 
 문제 2. 배열을 입력받아, 해당 배열에 들어있는 요소들 중 최대값을 찾는 함수를 작성하세요. (`Array.prototype.reduce`를 이용하세요)
