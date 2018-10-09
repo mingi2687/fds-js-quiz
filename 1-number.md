@@ -289,20 +289,15 @@ function print(height) {
 ```
 
 ```js
-function printLine(height, i) {
-  const n = i + 1;
-  const line = ' '.repeat(height - n) + '* '.repeat(n)
-  console.log(line)
-}
-
-function print(height) {
-  for (let i = 0; i < height; i++) {
-    printLine(height, i)
+function starTree(height) {
+  for (let i = 1; i <= height; i++) {
+    console.log(" ".repeat(height - i).concat("* ".repeat(i)));
   }
-  for (let i = height - 2; i >= 0; i--) {
-    printLine(height, i)
+  for (let i = 1; i < height; i++) {
+    console.log(" ".repeat(i).concat("* ".repeat(height - i)));
   }
 }
+starTree(4);
 ```
 
 ### 문제 11
