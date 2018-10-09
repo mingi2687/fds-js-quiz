@@ -86,6 +86,27 @@ bingo([
   [0, 1, 1]
 ]) // -> true
 ```
+```
+function bingo(arr){
+  for(let i = 0; i < arr.length; i++){
+    for(let j= 0; j < arr.length; j++){
+      if(arr[i] === arr[i][j] && arr[i][j] === 1 || 1 === arr[i][j]){
+          return true;
+          
+      }else{
+        return false;
+      }
+
+    }
+  }
+}
+
+bingo([
+  [1, 1, 0],
+  [0, 0, 1],
+  [1, 0, 1]
+])
+```
 
 ---
 
