@@ -79,6 +79,20 @@ randomArry([1,2,3,4,5])
 ### 문제 5
 
 임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
+```
+function randomColor(){
+  const cadidate = '123456789ABCDEF'
+  let color = '#'
+  for (let i = 0; i < 6; i++){
+    const randomIndex = Math.floor(cadidate.length * Math.random())
+    color += cadidate[randomIndex]
+  }
+  return color;
+}
+randomColor()
+```
+```
+
 
 ### 문제 6
 
