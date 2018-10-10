@@ -45,6 +45,13 @@ ceilBy5(32); -> 35
 ceilBy5(37); -> 40
 ```
 
+```
+function ceilBy5(input){
+  return Math.ceil(input/5)*5
+}
+ceilBy5(37)
+```
+
 ### 문제 4
 
 배열을 입력받아, 요소들의 순서를 뒤섞은 새 배열을 반환하는 함수를 작성하세요.
