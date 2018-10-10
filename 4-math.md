@@ -61,15 +61,19 @@ function randomArry(arry){
   let newArry=[];
   let arryIndex = arry.length
  for(let i = 0; i < arry.length; i++ ){
-   let n = Math.floor(Math.random()*arryIndex)
 
-    newArry.push(arry[n])
-
- }
+   let n = Math.floor(Math.random() * arryIndex)
+    
+    newArry.push(arry.splice(arry[n]))
+  }
  return newArry
 }
+
 randomArry([1,2,3,4,5])
 ```
+
+순회중인 배열을 건들지 말고 다시 풀어보자
+ }
 
 
 ### 문제 5
