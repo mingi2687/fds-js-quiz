@@ -39,16 +39,10 @@ flatten([
 ```
 
 ```
-
 function flatten(arr){
- let newArr=[];
-    
-    for(let i = 0; i < arr.length; i++){
-      for(let j = 0; j < arr[i].length; j++)
-      newArr.push(arr[i][j])
-    }
-  return newArr
-} 
+  //누적값: 지금까지 본 배열이 다 이어붙여진 새 배열
+   return arr.reduce((acc,innerArr)=> acc.concat(innnerArr),[])
+}
 
 flatten([
   [1, 2, 3],
